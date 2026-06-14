@@ -24,7 +24,7 @@
         <nav>
             <div class="logo">
                 <img src="src/assets/logo-perfil.png" alt="Daptux Logo" class="logo-img">
-                <span class="logo-text">Daptux</span>
+                <span class="logo-text">Daptux<span class="logo-accent">AI</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
@@ -43,14 +43,32 @@
 
     <!-- HERO SECTION -->
     <section class="hero" id="inicio">
-        <div class="container">
-            <div class="hero-content">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <span class="eyebrow">Business Software & AI</span>
                 <h1 data-i18n="hero.title">Transformamos Tu Negocio con Tecnología</h1>
-                <p data-i18n="hero.subtitle">Software personalizado, soluciones SaaS y desarrollo a medida para empresas que quieren crecer</p>
+                <p data-i18n="hero.subtitle">Software personalizado, soluciones SaaS y desarrollo a medida para empresas que quieren crecer.</p>
                 <div class="hero-cta">
                     <button class="button button-primary" onclick="scrollToSection('cotizaciones')" data-i18n="hero.cta">Empezar Ahora</button>
                     <button class="button button-secondary" onclick="scrollToSection('contacto')" data-i18n="nav.contact">Contacto</button>
                 </div>
+                <div class="hero-pill-grid">
+                    <div class="hero-pill">
+                        <strong>120+</strong>
+                        <span>Proyectos entregados</span>
+                    </div>
+                    <div class="hero-pill">
+                        <strong>22</strong>
+                        <span>Clientes en producción</span>
+                    </div>
+                    <div class="hero-pill">
+                        <strong>9</strong>
+                        <span>Líneas de negocio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="src/assets/hero-graphic.svg" alt="Visual Daptux" class="hero-graphic">
             </div>
         </div>
     </section>
