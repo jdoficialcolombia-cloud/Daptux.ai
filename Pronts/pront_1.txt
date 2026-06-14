@@ -1,0 +1,31 @@
+
+
+
+quiero que me ayudes por completo a restructurar mi pagina web 
+
+estilo esta pagina https://dapta.ai/?utm_source=cpc&utm_medium=google_ads&utm_campaign=Search_Registros_Brand-LA&utm_source=cpc&utm_medium=google_ads&utm_campaign=Search_Registros_Brand-LA&_gl=1*84rxdj*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwornRBhCrARIsAON5exGZjLLeaSaIt0YeEGKX8NR2ZoMw0AlTtiB1_nQTjwWXpfu-cqCevLYaAvXlEALw_wcB&gbraid=0AAAAAqmEPUAqv1ngG-swJqXzF9SM85DaZ
+
+pero usa nuestra identidad
+
+puedes sacar toda la informacion de esta carpeta 
+C:\Users\david\dgl\Documents\Daptux (esta en local)
+
+tambien te puedes guiar de 
+C:\Users\david\dgl\Documents\Daptux\Pitch
+
+quiero que tambien implementes estos .md
+
+C:\Users\david\dgl\Documents\Daptux\Daptux_pagina_web\Markdown
+
+
+el git que tienes que subir es el siguente
+https://github.com/Daptux/Daptux.ai
+
+cuando termines subelo a ese git
+
+tambien quiero que implementes un boton donde se tradusca la pagina en espanol y ingles
+
+toda la informacion que necesites guardar que quede en esta carpeta 
+C:\Users\david\dgl\Documents\Daptux\Daptux_pagina_web\
+
+si necesitas crearcarpetas yarchivos crealos con confianza

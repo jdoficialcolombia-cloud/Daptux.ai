@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daptux.ai - Transformamos tu negocio con tecnología. Software personalizado, soluciones SaaS y desarrollo a medida.">
+    <title>Daptux.ai - Transformamos Tu Negocio</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="src/css/main.css">
+    
+    <!-- Meta Tags -->
+    <meta name="theme-color" content="#0066ff">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav>
+            <div class="logo">🚀 Daptux</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+                <li><a href="#lineas-negocio" data-i18n="nav.businessLines">Líneas de Negocio</a></li>
+                <li><a href="#colaborativo" data-i18n="nav.collaborative">Modelo Colaborativo</a></li>
+                <li><a href="#cotizaciones" data-i18n="nav.quoteflow">Cotizaciones</a></li>
+                <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" onclick="changeLanguage('es')">ES</button>
+                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Transformamos Tu Negocio con Tecnología</h1>
+                <p data-i18n="hero.subtitle">Software personalizado, soluciones SaaS y desarrollo a medida para empresas que quieren crecer</p>
+                <div class="hero-cta">
+                    <button class="button button-light" onclick="scrollToSection('cotizaciones')" data-i18n="hero.cta">Empezar Ahora</button>
+                    <button class="button button-secondary" style="border-color: white; color: white;" onclick="scrollToSection('contacto')" data-i18n="nav.contact">Contacto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+        <div class="container">
+            <h2 data-i18n="services.title">Nuestros Servicios</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Se llena dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- LÍNEAS DE NEGOCIO -->
+    <section class="section section-alt" id="lineas-negocio">
+        <div class="container">
+            <h2 data-i18n="businessLines.title">Líneas de Negocio</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 50px;" data-i18n="businessLines.description">Soluciones verticales probadas y listas para usar</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3 data-i18n="businessLines.web.title">Daptux Web</h3>
+                    <p data-i18n="businessLines.web.description">Sitios web corporativos con blog, SEO y panel de administración</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3 data-i18n="businessLines.flowpay.title">Daptux FlowPay</h3>
+                    <p data-i18n="businessLines.flowpay.description">Plataforma SaaS para gestión de solicitudes de pago y proveedores</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🐄</div>
+                    <h3 data-i18n="businessLines.ranching.title">Daptux Ganadería</h3>
+                    <p data-i18n="businessLines.ranching.description">Software especializado para control ganadero e inventario</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🍽️</div>
+                    <h3 data-i18n="businessLines.restaurant.title">Daptux Restaurante</h3>
+                    <p data-i18n="businessLines.restaurant.description">Solución completa para gestión de restaurantes y cafeterías</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODELO COLABORATIVO -->
+    <section class="section" id="colaborativo">
+        <div class="container">
+            <div class="collaborative-section">
+                <h2 data-i18n="collaborative.title">Modelo Colaborativo</h2>
+                <div class="collaborative-subtitle" data-i18n="collaborative.subtitle">El Conocimiento Compartido es el Motor de la Innovación</div>
+                <p class="collaborative-description" data-i18n="collaborative.description">En Daptux creemos que compartir experiencias, metodologías y soluciones potencia el crecimiento colectivo y el éxito de nuestros proyectos.</p>
+                
+                <div class="benefits-list" id="benefitsList">
+                    <!-- Se llena dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COTIZACIONES - QUOTEFLOW -->
+    <section class="section section-alt" id="cotizaciones">
+        <div class="container">
+            <h2 data-i18n="quoteflow.title">Daptux QuoteFlow</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 50px;" data-i18n="quoteflow.description">Cotizador Profesional de Soluciones Digitales</p>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card">
+                    <p style="margin-bottom: 30px;">Genera cotizaciones profesionales para tus proyectos de software, páginas web, MVPs, SaaS y soluciones personalizadas.</p>
+                    <button class="button button-primary" onclick="openQuoteFlow()" data-i18n="quoteflow.button">Generar Cotización</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+        <div class="container">
+            <div class="contact-section">
+                <h2 data-i18n="contact.title">¿Hablemos?</h2>
+                <p data-i18n="contact.subtitle">Cuéntanos sobre tu proyecto y te ayudaremos a hacerlo realidad</p>
+                
+                <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label data-i18n="contact.form.name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="contact.form.email">Correo</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="contact.form.company">Empresa</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="contact.form.phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="contact.form.message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" data-i18n="contact.form.submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <footer-content>
+            <div class="footer-section">
+                <h3>Daptux</h3>
+                <p>Compartimos conocimiento. Creamos tecnología. Transformamos empresas.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="businessLines.title">Líneas de Negocio</h3>
+                <ul>
+                    <li><a href="#lineas-negocio">Daptux Web</a></li>
+                    <li><a href="#lineas-negocio">Daptux FlowPay</a></li>
+                    <li><a href="#lineas-negocio">Daptux Ganadería</a></li>
+                    <li><a href="#lineas-negocio">Daptux Restaurante</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="nav.services">Servicios</h3>
+                <ul>
+                    <li><a href="#servicios">Sitios Web</a></li>
+                    <li><a href="#servicios">Software Personalizado</a></li>
+                    <li><a href="#servicios">MVPs y SaaS</a></li>
+                    <li><a href="#servicios">Automatización e IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="contact.title">Contacto</h3>
+                <ul>
+                    <li><a href="mailto:info@daptux.ai">info@daptux.ai</a></li>
+                    <li><a href="#contacto" data-i18n="contact.form.submit">Envía un mensaje</a></li>
+                </ul>
+                <div class="footer-social" style="margin-top: 20px;">
+                    <a href="https://linkedin.com/company/daptux" title="LinkedIn">in</a>
+                    <a href="https://twitter.com/daptux" title="Twitter">𝕏</a>
+                    <a href="https://github.com/daptux" title="GitHub">⚙️</a>
+                </div>
+            </div>
+        </footer-content>
+        <div class="footer-bottom">
+            <div class="footer-mission">Compartimos conocimiento. Creamos tecnología. Transformamos empresas.</div>
+            <p data-i18n="footer.copyright">© 2026 Daptux.ai - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/js/i18n.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

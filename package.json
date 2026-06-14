@@ -1,0 +1,30 @@
+{
+  "name": "daptux-website",
+  "version": "1.0.0",
+  "description": "Daptux.ai - Página web profesional y cotizador de soluciones digitales",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Este proyecto usa archivos estáticos'",
+    "deploy": "git push origin main"
+  },
+  "keywords": [
+    "daptux",
+    "software",
+    "web-development",
+    "quoter",
+    "saas",
+    "digital-solutions"
+  ],
+  "author": "Daptux Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daptux/Daptux.ai"
+  },
+  "bugs": {
+    "url": "https://github.com/Daptux/Daptux.ai/issues"
+  },
+  "homepage": "https://daptux.ai"
+}
